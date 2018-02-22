@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -9,6 +9,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/***** Header *****/
 
 .nav-container {
   display: flex;
@@ -19,7 +21,7 @@ body {
 }
 
 navbar ul {
-	list-style: none;
+  list-style: none;
   background-color: #178DD3;
   margin: 0;
 }
@@ -38,7 +40,7 @@ navbar ul li:hover {
 
 
 h1 {
-	color: #D4FCFE;
+  color: #D4FCFE;
 }
 
 h2 {
@@ -46,28 +48,28 @@ h2 {
 }
 
 img {
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	margin-right: 70px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 70px;
 }
 
 
-.pizza {
-	display: flex;
+.main-header {
+  display: flex;
   flex-direction: row;
   align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
   background-color: #20A7DF;
   height: 230px;
 }
 
 .name-info {
-	margin-left: 70px;
+  margin-left: 70px;
 }
 
 .about {
-	padding: 10px 70px;
+  padding: 10px 70px;
   background-color: #5B666B;
 }
 
@@ -75,38 +77,68 @@ img {
   color: #C4CFD1;
 }
 
-hr {
-  width: 75%;
+
+
+.software-info {
+  padding-left: 40px;
 }
 
-.first-bar {
-	display: flex;
-	flex-direction: row;
+.first-bar progress,
+.first-bar span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 12em;
+  margin-bottom: 5px;
 }
 
-
-progress {
-	margin-left: 20px;
+.first-bar progress {
+  margin-left: 30px;
 }
-
 
 
 .logos {
+  background-color: #20A7DF;
+}
+
+.order {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .left-side {
   float: left;
-  width: 33%;
-}
-.right-side {
-  float: right;
-  width: 66%;
+  width: 40%;
 }
 
-.border-red {
-  border: 2px solid red;
+.right-side {
+  float: right;
+  width: 60%;
+}
+
+.personal-info {
+  width: 90%;
+}
+
+.personal-info h3 {
+ padding-left: 40px;
+ padding-bottom: 10px;
+}
+
+.personal-info hr {
+  width: 60%;
+  margin-left: 45px;
+  text-align: left;
+}
+
+strong {
+  margin-left: 45px;
+  display: inline-block;
+  width: 20%;
+}
+
+.large-line {
+  border-right: 1px solid black;
+  padding-right: 20px;
 }
 
 /****-ClearFix-****/
@@ -131,23 +163,123 @@ footer {
   margin-bottom: 0;
 }
 
-figure {
+ .hobby-info figure {
   display: inline-block;
   width: 30%;
-  padding: 0.5em;
+  margin: 10px 0;
   text-align: center;
 }
 
-.work-line {
-  border-left: 2px solid black;
-  display: inline-block;
+
+
+.hobby-info h3 {
+  padding-left: 40px;
 }
 
-.timeline { 
-  height:60px;
-  position: absolute;
-  margin-left:30px;
-  border-right: 1px solid;
-  display:inline-block;
+h3 {
+  color: #20A7DF;
+}
 
+
+
+.work-info span,
+.work-info p {
+  display: inline-block;
+  width: 40%;
+}
+
+.work-info span {
+  margin-left: 80px;
+
+}
+
+.work-line hr {
+  width: 75%;
+  text-align: left;
+  margin-left: 0;
+
+}
+
+.work-info p {
+  margin: 0;
+}
+
+ ul.vertical-line li {
+  position: relative;
+  
+}
+
+ul.vertical-line li:before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  border-left: 1px solid black;
+  height: 100px;
+  width: 1px;
+}
+
+ul.vertical-line li:first-child:before {
+  top: 12px;
+}
+
+ul.vertical-line li:last-child:before {
+  height: 12px;
+}
+
+.circles {
+  display: flex;
+  padding: 0;
+}
+
+.prof-skills {
+  margin-top: 50px;
+}
+
+.education {
+  margin-top: 30px;
+}
+
+.education-info p,
+.education-info span {
+  display: inline-block;
+  width: 50%
+  border: 1px solid black;
+}
+
+.education-info p {
+  margin: 0;
+}
+
+.education-info span {
+  margin-left: 50px;
+}
+
+.education-info hr {
+  text-align: left;
+  width: 10%;
+}
+
+
+/*---- Footer ---- */
+
+.order .box figure {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #178DD3;
+}
+
+.site-email {
+  margin-left: 60px;
+  align-items: center;
 }
